@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #fcad02;
+  font-family: Arial;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 5% 95%; 
+  grid-template-rows: 10vh 10vh 10vh 10vh 60vh;
+
+  grid-template-areas:
+    'home dashboard'
+    'inventory dashboard'
+    'tables dashboard'
+    'social dashboard'
+    'padder dashboard'
+}
+
+.container div {
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+#home {
+  grid-area: home;
+}
+#inventory {
+  grid-area: inventory;
+}
+#tables {
+  grid-area: tables;
+}
+#social {
+  grid-area: social;
+}
+#padder {
+  grid-area: padder;
+}
+
+#dashboard {
+  grid-area: dashboard;
+}
+
+
+
+
